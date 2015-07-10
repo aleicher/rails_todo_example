@@ -8,6 +8,10 @@
       <td>
         <%= link_to 'show', todo_path(todo)%>
       </td>
+      <td>
+        <%= link_to 'edit', edit_todo_path(todo)%>
+      </td>
     </tr>
   <% end %>
 </table>
+<%= link_to 'new todo', new_todo_path %>
