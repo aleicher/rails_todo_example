@@ -6,10 +6,7 @@
         <%= todo.title %>
       </td>
       <td>
-        <%= todo.description %>
-      </td>
-      <td>
-        <%= todo.done %>
+        <%= link_to 'show', todo_path(todo)%>
       </td>
     </tr>
   <% end %>
