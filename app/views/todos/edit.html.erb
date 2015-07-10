@@ -1,0 +1,10 @@
+<h1>Edit Todo</h1>
+<%= form_for :todo, url: todo_path(@todo), method: :patch do |f| %>
+  <%= f.label :title %><br>
+  <%= f.text_field :title %><br>
+  <%= f.label :description %><br>
+  <%= f.text_field :description %><br>
+  <%= f.label :done %><br>
+  <%= f.check_box :done %><br>
+  <%= f.submit %>
+<% end %>
