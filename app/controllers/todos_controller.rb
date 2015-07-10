@@ -24,6 +24,7 @@ class TodosController < ApplicationController
   def update
     @todo = Todo.find(params[:id])
     @todo.update(todo_params)
+    redirect_to @todo
   end
 
   private
