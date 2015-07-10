@@ -1,1 +1,16 @@
 <h1>Todos</h1>
+<table border="1">
+  <% @todos.each do |todo| %>
+    <tr>
+      <td>
+        <%= todo.title %>
+      </td>
+      <td>
+        <%= todo.description %>
+      </td>
+      <td>
+        <%= todo.done %>
+      </td>
+    </tr>
+  <% end %>
+</table>
